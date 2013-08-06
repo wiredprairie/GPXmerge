@@ -13,8 +13,10 @@ I created this out of frustration that the GPS would create many small files tha
 
 
 
+
 ## Build Instructions ##
-This has been only tested with Microsoft Visual Studio 2012. You should be able to load the project file and compile.  
+This has been only tested with Microsoft Visual Studio 2012. You should be able to load the project file and compile after downloading and
+adding [boost](http://www.boost.org/ "boost - free peer-reviewed portable C++ source libraries.") to the additional include directories in VS.    
 
 ----------
 
