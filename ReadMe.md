@@ -13,6 +13,9 @@ I created this out of frustration that the GPS would create many small files tha
 
 
 
+## Build Instructions ##
+This has been only tested with Microsoft Visual Studio 2012. You should be able to load the project file and compile.  
+
 ----------
 
 Software licensed (with `dirent.h` and `pugixml.cpp` having their own license):
