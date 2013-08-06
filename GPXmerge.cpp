@@ -23,8 +23,6 @@ const std::string os_folder_separator("/");
 
 typedef shared_ptr<xml_document> xml_document_ptr;
 
-
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	vector<xml_document_ptr> gpxDocs;
@@ -106,9 +104,11 @@ int _tmain(int argc, _TCHAR* argv[])
 		// make sure handles are closed
 		closedir (pDir);
 
+		// uses the first document as a master/template for the merged file 
 		if (first_doc) {
 			auto gpx = first_doc->child("gpx");
 			auto trk_node = gpx.child("trk");
+			// grab everything from the map and put it into the doc
 			for(auto it=trkseg_map.begin(); it != trkseg_map.end(); ++it) {
 				trk_node.append_copy(it->second);
 			}
