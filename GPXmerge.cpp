@@ -81,7 +81,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				string ext;
 				ext.append(file_name.begin() + pos, file_name.end());
 				std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
-				if (hasEnding(ext, ".gpx2")) {
+				if (hasEnding(ext, ".gpx")) {
 					int segments = 0;
 					auto doc = make_shared<xml_document>();
 					if (!first_doc) {
